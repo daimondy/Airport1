@@ -1,0 +1,74 @@
+<Planes>
+  <NumberOfPlanes>5</NumberOfPlanes>
+  <Plane id="0">
+	  <Model>F-16</Model>
+	  <MaxFuelLevel>3000</MaxFuelLevel>
+	  <TakeoffInterval>1</TakeoffInterval>
+	  <FuelUsage>20</FuelUsage>
+	  <Type>MilitaryPlane</Type>
+    <Image>m2</Image>
+	
+	  <MaxPassengers></MaxPassengers>
+	  <MaxStorage></MaxStorage>
+	  <MaxAmmo>1000</MaxAmmo>
+	  <WeaponType>M61A1 20 mm</WeaponType>
+  </Plane>
+  
+  <Plane id="1">
+    <Model>Bombardier Q Series</Model>
+	  <MaxFuelLevel>6000</MaxFuelLevel>
+	  <TakeoffInterval>2</TakeoffInterval>
+	  <FuelUsage>25</FuelUsage>
+	  <Type>PassengerPlane</Type>
+    <Image>p3</Image>
+	
+	  <MaxPassengers>350</MaxPassengers>
+	  <MaxStorage></MaxStorage>
+	  <MaxAmmo></MaxAmmo>
+	  <WeaponType></WeaponType>
+  </Plane>
+
+  <Plane id="2">
+    <Model>Boening 707</Model>
+    <MaxFuelLevel>183380</MaxFuelLevel>
+    <TakeoffInterval>6</TakeoffInterval>
+    <FuelUsage>120</FuelUsage>
+    <Type>PassengerPlane</Type>
+    <Image>p1</Image>
+
+    <MaxPassengers>568</MaxPassengers>
+    <MaxStorage></MaxStorage>
+    <MaxAmmo></MaxAmmo>
+    <WeaponType></WeaponType>
+  </Plane>
+  
+  <Plane id="3">
+    <Model>An-70</Model>
+    <MaxFuelLevel>18500</MaxFuelLevel>
+    <TakeoffInterval>2</TakeoffInterval>
+    <FuelUsage>10</FuelUsage>
+    <Type>TransportPlane</Type>
+    <Image>t1</Image>
+
+    <MaxPassengers></MaxPassengers>
+    <MaxStorage>40</MaxStorage>
+    <MaxAmmo></MaxAmmo>
+    <WeaponType></WeaponType>
+  </Plane>
+  
+  <Plane id="4">
+    <Model>Airbus A300</Model>
+    <MaxFuelLevel>25000</MaxFuelLevel>
+    <TakeoffInterval>3</TakeoffInterval>
+    <FuelUsage>5</FuelUsage>
+    <Type>PassengerPlane</Type>
+    <Image>p7</Image>
+
+    <MaxPassengers>266</MaxPassengers>
+    <MaxStorage></MaxStorage>
+    <MaxAmmo></MaxAmmo>
+    <WeaponType></WeaponType>
+  </Plane>
+  
+</Planes>
+  

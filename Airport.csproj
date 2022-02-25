@@ -1,0 +1,168 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{C0FC15C6-5CA3-4F41-85C9-4ACDEB4D8724}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>WindowsApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Airport</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AirportManagement\AirportManager.cs" />
+    <Compile Include="AirportManagement\Airspace.cs" />
+    <Compile Include="AirportManagement\Hangar.cs" />
+    <Compile Include="AirportManagement\Runway.cs" />
+    <Compile Include="AppWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppWindow.Designer.cs">
+      <DependentUpon>AppWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Constants.cs" />
+    <Compile Include="ImageConstants.cs" />
+    <Compile Include="NotificationManagement\Notification.cs" />
+    <Compile Include="NotificationManagement\NotificationManager.cs" />
+    <Compile Include="NotificationManagement\NotificationType.cs" />
+    <Compile Include="OperationManagement\OperationList.cs" />
+    <Compile Include="OperationManagement\OperationListElement.cs" />
+    <Compile Include="OperationManagement\OperationManager.cs" />
+    <Compile Include="Operations\IOperation.cs" />
+    <Compile Include="Operations\OperationAssistant.cs" />
+    <Compile Include="Operations\OperationFueling.cs" />
+    <Compile Include="Operations\OperationInAir.cs" />
+    <Compile Include="Operations\OperationIncommingPlanes.cs" />
+    <Compile Include="Operations\OperationLanding.cs" />
+    <Compile Include="Operations\OperationLoading.cs" />
+    <Compile Include="Operations\OperationTakeoff.cs" />
+    <Compile Include="Operations\OperationTechnicalInspection.cs" />
+    <Compile Include="Operations\OperationUnloading.cs" />
+    <Compile Include="Planes\MilitaryPlane.cs" />
+    <Compile Include="Planes\PassengerPlane.cs" />
+    <Compile Include="Planes\Plane.cs" />
+    <Compile Include="Planes\PlaneImage.cs" />
+    <Compile Include="Planes\State.cs" />
+    <Compile Include="Planes\TransportPlane.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs" />
+    <Compile Include="Weathers\Weather.cs" />
+    <Compile Include="Weathers\WeatherImage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AppWindow.resx">
+      <DependentUpon>AppWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ammo.png" />
+    <Content Include="Resources\btnDoHangar.png" />
+    <Content Include="Resources\btnDown.png" />
+    <Content Include="Resources\btnUp.png" />
+    <Content Include="Resources\btnLeft.png" />
+    <Content Include="Resources\btnRight.png" />
+    <Content Include="Resources\btnStart.png" />
+    <Content Include="Resources\btnTick.png" />
+    <Content Include="Resources\buttonNaPas.png" />
+    <Content Include="Resources\btnStop.png" />
+    <Content Include="Resources\cargo.png" />
+    <Content Include="Resources\cloud.png" />
+    <Content Include="Resources\cloudsun.png" />
+    <Content Include="Resources\DefinedPlanes.xml" />
+    <Content Include="Resources\destroyed.png" />
+    <Content Include="Resources\flashcloud.png" />
+    <Content Include="Resources\hail.png" />
+    <Content Include="Resources\hardrain.png" />
+    <Content Include="Resources\littlesnow.png" />
+    <Content Include="Resources\passwheels.png" />
+    <Content Include="Resources\cargowheels.png" />
+    <Content Include="Resources\militarywheels.png" />
+    <Content Include="Resources\rain.png" />
+    <Content Include="Resources\snow.png" />
+    <Content Include="Resources\stormrain.png" />
+    <Content Include="Resources\techmanag.png" />
+    <Content Include="Resources\controltech.png" />
+    <Content Include="Resources\m1.png" />
+    <Content Include="Resources\m2.png" />
+    <Content Include="Resources\m3.png" />
+    <Content Include="Resources\P1.png" />
+    <Content Include="Resources\P2.png" />
+    <Content Include="Resources\p3.png" />
+    <Content Include="Resources\p4.png" />
+    <Content Include="Resources\p5.png" />
+    <Content Include="Resources\p6.png" />
+    <Content Include="Resources\p7.png" />
+    <Content Include="Resources\passtart.png" />
+    <Content Include="Resources\people.png" />
+    <Content Include="Resources\selection.png" />
+    <Content Include="Resources\T1.png" />
+    <Content Include="Resources\T2.png" />
+    <Content Include="Resources\T3.png" />
+    <Content Include="Resources\tankowanie.png" />
+    <Content Include="Resources\btnFuel.png" />
+    <Content Include="Resources\refueling.png" />
+    <Content Include="Resources\tstate1.png" />
+    <Content Include="Resources\passengerentry.png" />
+    <Content Include="Resources\passengerwithdrawal.png" />
+    <Content Include="Resources\winds.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
